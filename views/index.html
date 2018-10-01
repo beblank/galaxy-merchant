@@ -1,0 +1,34 @@
+<html>
+    <head>
+    <title></title>
+    
+    </head>
+    <body>
+            
+        <form action="/" method="post">
+            How much is: <input type="text" id="in" name="input">
+            <input type="submit" class="myBtn" name="submit">
+            <input type="submit" value="Iron" class="myBtn" name="submit">
+            <input type="submit" value="Silver" class="myBtn" name="submit">
+            <input type="submit" value="Gold" class="myBtn" name="submit">
+        </form>
+        {{.Result}}
+        <br>
+        <br>
+        <input type="button" class="myBtn" value="glob">
+        <input type="button" class="myBtn" value="prok">
+        <input type="button" class="myBtn" value="pish">
+        <input type="button" class="myBtn" value="tegj">
+        <script>
+                const allBtns = document.querySelectorAll('.myBtn');
+                    allBtns.forEach( element => {
+                    element.addEventListener('click', myFunction);
+                })
+        
+                function myFunction(e) {
+                    const value = e.target.value;
+                    document.getElementById("in").value += value + " ";
+                }
+            </script>
+    </body>
+</html>
