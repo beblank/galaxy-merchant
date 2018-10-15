@@ -3,9 +3,9 @@ package main
 import (
 	"html/template"
 	"log"
-	"metal/calculator"
-	"metal/converter"
-	"metal/validator"
+	"galaxy-merchant/calculator"
+	"galaxy-merchant/converter"
+	"galaxy-merchant/validator"
 	"net/http"
 	"strconv"
 )
