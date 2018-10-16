@@ -8,7 +8,7 @@ X 10\
 L 50\
 C 100\
 D 500\
-M 1,000\
+M 1,000
 
 Numbers are formed by combining symbols together and adding the values. For example, MMVI is 1000 + 1000 + 5 + 1 = 2006. Generally, symbols are placed in order of value, starting with the largest values. When smaller values precede larger values, the smaller values are subtracted from the larger values, and the result is added to the total. For example MCMXLIV = 1000 + (1000 − 100) + (50 − 10) + (5 − 1) = 1944.
 The symbols "I", "X", "C", and "M" can be repeated three times in succession, but no more. (They may appear four times if the third and fourth are separated by a smaller value, such as XXXIX.) "D", "L", and "V" can never be repeated.
@@ -17,20 +17,23 @@ Only one small-value symbol may be subtracted from any large-value symbol.
 A number written in Arabic numerals can be broken into digits. For example, 1903 is composed of 1, 9, 0, and 3. To write the Roman numeral, each of the non-zero digits should be treated separately. In the above example, 1,000 = M, 900 = CM, and 3 = III. Therefore, 1903 = MCMIII.
 
 ## Design
-the apps consist of three main component \
+the apps consist of three main component
 1. converter \
     Convert input into roman
 2. validator \
     Validate roman character using regex
 3. Calculator \
-    Calculate roman input and multiplied with Metal type \
+    Calculate roman input and multiplied with Metal type
 the main function take input from html FormValue with the name of input and create HTTP server with 8081 as the port
 
 
 ## Excecution Instruction
-install go in your computer \
+install go in your computer
 
-clone the git project and put it in your $GOPATH/src folder \
+clone the git project and put it in your $GOPATH/src folder
 
-then run the project using \
+then run the project using
+
+```golang
 go run main.go
+```
